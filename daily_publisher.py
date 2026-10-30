@@ -108,16 +108,16 @@ def generate_caption(filename=""):
     )
 
     try:
-        url = f"https://text.pollinations.ai/{urllib.parse.quote(user_prompt)}"
-        params = {
-            'system': system_prompt,
-            'model': 'openai',
-            'seed': random.randint(1, 999999)
+        url = "https://gen.pollinations.ai/v1/chat/completions"
+        payload = {
+            'model': 'google/gemini-2.5-flash-lite',
+            'messages': [{'role': 'system', 'content': system_prompt}, {'role': 'user', 'content': user_prompt}],
+            'max_tokens': 220, 'temperature': 0.9
         }
-        headers = {'Authorization': f'Bearer {pollinations_key}'} if pollinations_key else {}
-        resp = requests.get(url, params=params, headers=headers, timeout=60)
+        headers = {'Authorization': f'Bearer {pollinations_key}', 'Content-Type': 'application/json'}
+        resp = requests.post(url, headers=headers, json=payload, timeout=60)
         if resp.status_code == 200:
-            cleaned = clean_caption(resp.text, subject)
+            text = resp.json().get('choices', [{}])[0].get('message', {}).get('content', ''); cleaned = clean_caption(text, subject)
             if cleaned:
                 return cleaned
             else:
