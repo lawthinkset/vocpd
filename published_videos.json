@@ -2148,5 +2148,27 @@
         "comment_id": "17958785364267725"
       }
     ]
+  },
+  {
+    "filename": "Woman_recording_notes_with_app_4caed980.mp4",
+    "results": [
+      {
+        "status": "failed",
+        "platform": "facebook",
+        "page_id": "1249206751619739",
+        "error": "{\"error\":{\"message\":\"You cannot access the app till you log in to www.facebook.com and follow the instructions given.\",\"type\":\"OAuthException\",\"code\":190,\"error_data\":\"{\\\"checkpoint_url\\\":\\\"https:\\\\\\/\\\\\\/www.facebook.com\\\"}\",\"error_subcode\":459,\"fbtrace_id\":\"ATWdWPX82FICgg648OBdz9i\"}}",
+        "page_name": "VoicePad AI"
+      },
+      {
+        "status": "failed",
+        "platform": "facebook_story",
+        "page_id": "1249206751619739",
+        "page_name": "VoicePad AI"
+      },
+      {
+        "status": "failed",
+        "platform": "instagram"
+      }
+    ]
   }
 ]
