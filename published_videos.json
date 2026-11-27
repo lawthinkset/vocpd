@@ -2170,5 +2170,27 @@
         "platform": "instagram"
       }
     ]
+  },
+  {
+    "filename": "Woman_recording_voice_note_461104f7.mp4",
+    "results": [
+      {
+        "status": "failed",
+        "platform": "facebook",
+        "page_id": "1249206751619739",
+        "error": "{\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AKFrt7GVbuiUuyjOCytFsY3\"}}",
+        "page_name": "VoicePad AI"
+      },
+      {
+        "status": "failed",
+        "platform": "facebook_story",
+        "page_id": "1249206751619739",
+        "page_name": "VoicePad AI"
+      },
+      {
+        "status": "failed",
+        "platform": "instagram"
+      }
+    ]
   }
 ]
