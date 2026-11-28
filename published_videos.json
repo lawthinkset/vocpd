@@ -2192,5 +2192,27 @@
         "platform": "instagram"
       }
     ]
+  },
+  {
+    "filename": "Woman_demonstrates_VoicePad_AI_app_c8563f24.mp4",
+    "results": [
+      {
+        "status": "failed",
+        "platform": "facebook",
+        "page_id": "1249206751619739",
+        "error": "{\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":460,\"fbtrace_id\":\"AVIW5rK_amh9_OXI01toAmf\"}}",
+        "page_name": "VoicePad AI"
+      },
+      {
+        "status": "failed",
+        "platform": "facebook_story",
+        "page_id": "1249206751619739",
+        "page_name": "VoicePad AI"
+      },
+      {
+        "status": "failed",
+        "platform": "instagram"
+      }
+    ]
   }
 ]
